@@ -9,6 +9,10 @@ group = 'com.kkjavatutorials'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '8'
 
+cobertura {
+    coverageFormats = ['xml']
+}
+
 repositories {
     mavenCentral()
 }
@@ -22,8 +26,4 @@ dependencies {
 
 test {
     useJUnitPlatform()
-}
-
-cobertura {
-    coverageFormats = ['xml']
 }
